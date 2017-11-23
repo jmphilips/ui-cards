@@ -1,7 +1,6 @@
 import React from 'react';
-import './CardColumn.css';
 
-import Card from '../Card/Card';
+import Card from '../UserCard/UserCard';
 
 import data from './data';
 
@@ -16,7 +15,7 @@ const CardColumn = () => {
     )
   })
   return (
-    <div className='CardColumn'>
+    <div>
       {cards}
     </div>
   )
