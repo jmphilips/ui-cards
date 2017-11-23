@@ -1,12 +1,13 @@
 import React from 'react';
 import './SocialButton.css';
-import { Button } from 'antd';
+import { Button, Icon } from 'antd';
 
 const SocialButton = () => {
   return (
     <div className='SocialButton'>
-      <h3>Social Media</h3>
-      <Button>socialMedia</Button>
+      <Button>
+        <Icon type="mail" />
+      </Button>
     </div>
   )
 }
