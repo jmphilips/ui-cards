@@ -18,8 +18,8 @@ class CardDisplay extends Component {
   }
 
   render() {
-    return this.state.chunkedFilms.map(filmArr => {
-      return <CardRow filmArr={filmArr} />;
+    return this.state.chunkedFilms.map((filmArr, index) => {
+      return <CardRow key={index} filmArr={filmArr} />;
     });
   }
 }

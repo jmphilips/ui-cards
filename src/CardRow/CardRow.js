@@ -5,7 +5,7 @@ import FilmCard from "../FilmCard/FilmCard";
 const CardRow = props => {
   const cards = props.filmArr.map(obj => {
     return (
-      <Col span={8}>
+      <Col key={obj.id} span={8}>
         <FilmCard
           title={obj.title}
           release_date={obj.release_date}
