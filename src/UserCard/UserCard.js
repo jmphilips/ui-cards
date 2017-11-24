@@ -5,7 +5,7 @@ import SocialButton from "../SocialButton/SocialButton";
 
 const UserCard = props => {
   return (
-    <div className>
+    <div>
       <Card title={props.jobTitle} extra={props.cityName}>
         <h2>{props.username}</h2>
         <SocialButton />

@@ -1,5 +1,4 @@
-import React from 'react';
-import './Header.css';
+import React from "react";
 
 const Header = () => {
   return <h1>'Sup Fam?</h1>;
