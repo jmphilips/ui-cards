@@ -16,7 +16,7 @@ const CardColumn = () => {
     )
   })
   return (
-    <div>
+    <div style={{ padding: '2.5%' }}>
       <Row gutter={16}>
         {cards}
       </Row>
