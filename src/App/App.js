@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 
-import Header from '../Header/Header';
+import Header from "../Header/Header";
 
-import CardColumn from '../CardColumn/CardColumn';
+import CardDisplay from "../CardDisplay/CardDisplay";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Header />
-        <CardColumn />
+        <CardDisplay />
       </div>
     );
   }

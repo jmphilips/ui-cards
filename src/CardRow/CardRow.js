@@ -1,15 +1,15 @@
 import React from "react";
 import { Row, Col } from "antd";
-import UserCard from "../UserCard/UserCard";
+import FilmCard from "../FilmCard/FilmCard";
 
 const CardRow = props => {
-  const cards = props.users.map(obj => {
+  const cards = props.filmArr.map(obj => {
     return (
       <Col span={8}>
-        <UserCard
-          username={obj.username}
-          jobTitle={obj.jobTitle}
-          cityName={obj.cityName}
+        <FilmCard
+          title={obj.title}
+          release_date={obj.release_date}
+          description={obj.description}
         />
       </Col>
     );
