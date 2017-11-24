@@ -15,7 +15,7 @@ const data = () => {
       cityName: 'Jackson, Tennessee',
       jobTitle: 'Social Worker'
     }
-  ]
+  ];
 };
 
 export default data;

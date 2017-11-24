@@ -7,21 +7,19 @@ const CardColumn = () => {
   const cards = data().map(user => {
     return (
       <Col span={8}>
-      <Card
-        username={user.username}
-        jobTitle={user.jobTitle}
-        cityName={user.cityName}
-      />
+        <Card
+          username={user.username}
+          jobTitle={user.jobTitle}
+          cityName={user.cityName}
+        />
       </Col>
-    )
-  })
+    );
+  });
   return (
     <div style={{ padding: '2.5%' }}>
-      <Row gutter={16}>
-        {cards}
-      </Row>
+      <Row gutter={16}>{cards}</Row>
     </div>
-  )
-}
+  );
+};
 
 export default CardColumn;
