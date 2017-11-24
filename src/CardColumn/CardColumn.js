@@ -1,24 +1,35 @@
-import React from 'react';
-import { Row, Col } from 'antd';
-import Card from '../UserCard/UserCard';
-import data from './data';
+import React from "react";
+import { Row, Col } from "antd";
+import Card from "../UserCard/UserCard";
+import data from "../Data/data";
+import chunk from "lodash/chunk";
 
 const CardColumn = () => {
-  const cards = data().map(user => {
+  const users = chunk(data(), 3);
+
+  const rows = users.map(userArr => {
+    return createCardRow(userArr);
+  });
+
+  return <div style={{ padding: "2.5%" }}>{rows}</div>;
+};
+
+const createCardRow = arr => {
+  const mappedArray = arr.map(obj => {
     return (
       <Col span={8}>
         <Card
-          username={user.username}
-          jobTitle={user.jobTitle}
-          cityName={user.cityName}
+          username={obj.username}
+          jobTitle={obj.jobTitle}
+          cityName={obj.cityName}
         />
       </Col>
     );
   });
   return (
-    <div style={{ padding: '2.5%' }}>
-      <Row gutter={16}>{cards}</Row>
-    </div>
+    <Row gutter={16} style={{ padding: "1rem" }}>
+      {mappedArray}
+    </Row>
   );
 };
 

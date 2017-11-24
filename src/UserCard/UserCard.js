@@ -9,7 +9,6 @@ const UserCard = props => {
       <Card title={props.jobTitle} extra={props.cityName}>
         <h2>{props.username}</h2>
         <SocialButton />
-        <p>Dancing with our hands tied</p>
       </Card>
     </div>
   );
