@@ -4,12 +4,10 @@ import CardRow from "../CardRow/CardRow";
 import FetchFilms from "../FilmService/FetchFilms";
 
 class CardDisplay extends Component {
-  constructor() {
-    super();
-    this.state = {
-      chunkedFilms: []
-    };
-  }
+  state = {
+    chunkedFilms: [],
+    visible: false
+  };
 
   componentDidMount() {
     FetchFilms().then(films => {
