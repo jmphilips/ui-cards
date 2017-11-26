@@ -10,6 +10,8 @@ const CardRow = props => {
           title={obj.title}
           release_date={obj.release_date}
           description={obj.description}
+          director={obj.director}
+          producer={obj.producer}
         />
       </Col>
     );

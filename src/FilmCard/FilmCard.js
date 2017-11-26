@@ -26,14 +26,16 @@ class FilmCard extends Component {
           </Button>
         </Card>
         <Modal
-          title={this.props.title}
           visible={this.state.visible}
           onOk={this.closeModal}
           onCancel={this.closeModal}
           okText="Ok"
           cancelText="Close"
         >
+          <h2>{this.props.title}</h2>
           <p>{this.props.description}</p>
+          <p>Directed by: {this.props.director}</p>
+          <p>Produced by: {this.props.producer}</p>
         </Modal>
       </div>
     );
